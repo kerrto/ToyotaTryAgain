@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		ABDBD9171C3B6A3600FE3F2E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDBD9161C3B6A3600FE3F2E /* main.m */; };
+		ABDBD91F1C3B6A8200FE3F2E /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDBD91E1C3B6A8200FE3F2E /* Car.m */; };
+		ABDBD9221C3B6AA000FE3F2E /* Toyota.m in Sources */ = {isa = PBXBuildFile; fileRef = ABDBD9211C3B6AA000FE3F2E /* Toyota.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		ABDBD9131C3B6A3600FE3F2E /* Toyotatryagain */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Toyotatryagain; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABDBD9161C3B6A3600FE3F2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABDBD91D1C3B6A8200FE3F2E /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		ABDBD91E1C3B6A8200FE3F2E /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		ABDBD9201C3B6AA000FE3F2E /* Toyota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Toyota.h; sourceTree = "<group>"; };
+		ABDBD9211C3B6AA000FE3F2E /* Toyota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toyota.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				ABDBD9161C3B6A3600FE3F2E /* main.m */,
+				ABDBD91D1C3B6A8200FE3F2E /* Car.h */,
+				ABDBD91E1C3B6A8200FE3F2E /* Car.m */,
+				ABDBD9201C3B6AA000FE3F2E /* Toyota.h */,
+				ABDBD9211C3B6AA000FE3F2E /* Toyota.m */,
 			);
 			path = Toyotatryagain;
 			sourceTree = "<group>";
@@ -118,6 +128,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABDBD9221C3B6AA000FE3F2E /* Toyota.m in Sources */,
+				ABDBD91F1C3B6A8200FE3F2E /* Car.m in Sources */,
 				ABDBD9171C3B6A3600FE3F2E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +219,7 @@
 		ABDBD91B1C3B6A3600FE3F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +227,7 @@
 		ABDBD91C1C3B6A3600FE3F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				LINK_WITH_STANDARD_LIBRARIES = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
